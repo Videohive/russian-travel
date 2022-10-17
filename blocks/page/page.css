@@ -8,3 +8,12 @@
   font-family: 'Inter', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+.transition {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.transition:hover {
+  opacity: 0.5;
+}
