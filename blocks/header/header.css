@@ -30,7 +30,7 @@ padding-top: 28px, 28px, 28px, 16px;
 
  @media screen and (max-width: 768px) {
   .header {
-    padding-top: calc(16px + (28 - 16) * ((100vw - 320px) / (768 - 320)));
     width: calc(288px + (720 - 288) * ((100vw - 320px) / (768 - 320)));
+    padding-top: calc(16px + (28 - 16) * ((100vw - 320px) / (768 - 320)));
   }
  }
