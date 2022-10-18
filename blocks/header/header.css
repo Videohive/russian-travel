@@ -20,17 +20,17 @@ padding-top: 28px, 28px, 28px, 16px;
   .header {
     width: calc(928px + (1184 - 928) * ((100vw - 1024px) / (1280 - 1024)));
   }
- }
+}
 
- @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .header {
     width: calc(720px + (928 - 720) * ((100vw - 768px) / (1024 - 768)));
   }
- }
+}
 
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
     width: calc(288px + (720 - 288) * ((100vw - 320px) / (768 - 320)));
     padding-top: calc(16px + (28 - 16) * ((100vw - 320px) / (768 - 320)));
   }
- }
+}

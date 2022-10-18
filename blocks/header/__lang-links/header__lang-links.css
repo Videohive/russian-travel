@@ -17,4 +17,4 @@
     margin-top: calc(14px + (18 - 14) * ((100vw - 320px) / (768 - 320)));
     margin-bottom: calc(8px + (6 - 8) * ((100vw - 320px) / (768 - 320)));
   }
- }
+}
