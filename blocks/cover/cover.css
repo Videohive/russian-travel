@@ -16,21 +16,18 @@ padding-top: 92px, 92px, 90px, 66px;
 
 @media screen and (max-width: 1280px) {
   .cover {
-    max-width: calc(928px + (1184 - 928) * ((100vw - 1024px) / (1280 - 1024)));
     padding-top: calc(92px + (92 - 92) * ((100vw - 1024px) / (1280 - 1024)));
   }
 }
 
 @media screen and (max-width: 1024px) {
   .cover {
-    max-width: calc(720px + (928 - 720) * ((100vw - 768px) / (1024 - 768)));
     padding-top: calc(90px + (92 - 90) * ((100vw - 768px) / (1024 - 768)));
   }
 }
 
 @media screen and (max-width: 768px) {
   .cover {
-    max-width: calc(288px + (720 - 288) * ((100vw - 320px) / (768 - 320)));
     padding-top: calc(66px + (90 - 66) * ((100vw - 320px) / (768 - 320)));
   }
 }

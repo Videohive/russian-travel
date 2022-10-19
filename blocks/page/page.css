@@ -10,12 +10,3 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
-
-.transition {
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-}
-
-.transition:hover {
-  opacity: 0.5;
-}
