@@ -5,3 +5,16 @@
   text-decoration-line: underline;
   color: #FFFFFF;
 }
+
+@media screen and (max-width: 768px) {
+  .place__link {
+    margin-left: calc(16px + (0 - 16) * ((100vw - 320px) / (768 - 320)));
+    margin-right: calc(16px + (0 - 16) * ((100vw - 320px) / (768 - 320)));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place__link {
+    margin: 0 16px;
+  }
+}

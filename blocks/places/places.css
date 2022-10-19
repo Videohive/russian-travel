@@ -7,3 +7,46 @@
   grid-template-columns: 1fr;
   gap: 80px;
 }
+
+/*
+screen: 1280px, 1024px, 768px, 320px;
+max-width: 984px, 928px, 720px, 320px;
+padding-top: 92px, 92px, 88px, 64px;
+padding-sides: 148px, 48px, 24px, 0px;
+
+Формула:
+Минимальная ширина + (Максимальная ширина - Минимальная ширина) * ((Ширина окна браузера - Минимальная ширина окна браузера) / (Максимальная ширина окна браузера - Минимальная ширина окна браузера)));
+*/
+
+@media screen and (max-width: 1280px) {
+  .places {
+    max-width: calc(928px + (984 - 928) * ((100vw - 1024px) / (1280 - 1024)));
+    padding-top: calc(92px + (92 - 92) * ((100vw - 1024px) / (1280 - 1024)));
+    padding-left: calc(48px + (148 - 48) * ((100vw - 1024px) / (1280 - 1024)));
+    padding-right: calc(48px + (148 - 48) * ((100vw - 1024px) / (1280 - 1024)));
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .places {
+    max-width: calc(720px + (928 - 720) * ((100vw - 768px) / (1024 - 768)));
+    padding-top: calc(88px + (92 - 88) * ((100vw - 768px) / (1024 - 768)));
+    padding-left: calc(24px + (48 - 24) * ((100vw - 768px) / (1024 - 768)));
+    padding-right: calc(24px + (48 - 24) * ((100vw - 768px) / (1024 - 768)));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    max-width: calc(288px + (720 - 320) * ((100vw - 320px) / (768 - 320)));
+    padding-top: calc(64px + (88 - 64) * ((100vw - 320px) / (768 - 320)));
+    padding-left: calc(0px + (24 - 0) * ((100vw - 320px) / (768 - 320)));
+    padding-right: calc(0px + (24 - 0) * ((100vw - 320px) / (768 - 320)));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .places {
+    padding: 64px 0 0 0;
+  }
+}

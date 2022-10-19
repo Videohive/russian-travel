@@ -4,3 +4,37 @@
   line-height: 76px;
   font-weight: 900;
 }
+
+/*
+screen: 1280px, 1024px, 768px, 320px;
+max-width: 484px, 456px, 352px, 288px
+font-size: 72px, 72px, 42px, 32px;
+line-height: 76px, 76px, 46px, 35px;
+
+Формула:
+Минимальная ширина + (Максимальная ширина - Минимальная ширина) * ((Ширина окна браузера - Минимальная ширина окна браузера) / (Максимальная ширина окна браузера - Минимальная ширина окна браузера)));
+*/
+
+@media screen and (max-width: 1024px) {
+  .place__title {
+    font-size: calc(42px + (72 - 42) * ((100vw - 768px) / (1024 - 768)));
+    line-height: calc(46px + (76 - 46) * ((100vw - 768px) / (1024 - 768)));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place__title {
+    font-size: calc(32px + (42 - 32) * ((100vw - 320px) / (768 - 320)));
+    line-height: calc(35px + (46 - 35) * ((100vw - 320px) / (768 - 320)));
+    margin-left: calc(16px + (0 - 16) * ((100vw - 320px) / (768 - 320)));
+    margin-right: calc(16px + (0 - 16) * ((100vw - 320px) / (768 - 320)));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+    margin: 0 16px;
+  }
+}

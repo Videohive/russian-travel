@@ -1,6 +1,31 @@
 .place__paragraph {
   margin: 0;
+  max-width: 484px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 163%;
+  line-height: 29px;
+}
+
+/*
+screen: 1280px, 1024px, 768px, 320px;
+max-width: 484px, 456px, 352px, 288px
+font-size: 18px, 18px, 16px, 16px;
+line-height: 29px, 29px, 26px, 26px;
+
+Формула:
+Минимальная ширина + (Максимальная ширина - Минимальная ширина) * ((Ширина окна браузера - Минимальная ширина окна браузера) / (Максимальная ширина окна браузера - Минимальная ширина окна браузера)));
+*/
+
+@media screen and (max-width: 1024px) {
+  .place__paragraph {
+    font-size: calc(16px + (18 - 16) * ((100vw - 768px) / (1024 - 768)));
+    line-height: calc(26px + (29 - 26) * ((100vw - 768px) / (1024 - 768)));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
