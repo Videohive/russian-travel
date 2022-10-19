@@ -25,3 +25,21 @@
   opacity: .3;
   transition: opacity .5s ease-in-out;
 }
+
+@media screen and (max-width: 1024px) {
+  .cover__background {
+    min-height: calc(480px + (640 - 480) * ((100vw - 768px) / (1024 - 768)));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__background {
+    min-height: calc(200px + (480 - 200) * ((100vw - 320px) / (768 - 320)));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover__background {
+    min-height: 200px;
+  }
+}
